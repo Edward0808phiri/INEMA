@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+    <header>
+        <h1>
+            INEMA SCHOOL PVT
+        </h1>
+       
+    </header>
+   <ul>
+    <li class="sbt"><a href="#" class="act">calendar</a>
+    </li> 
+    <li class="sbt"><a href="past.html" class="act">past papers</a></li>
+     <li class="sbt"><a href="enrol.html" class="act">enroll</a></li>
+   </ul>
+  <h1 class="reg">Register Student</h1>
+  <form onsubmit="saveStudent(event)">
+    <input type="text" id="studentName" placeholder="Enter student name" required>
+    <button type="submit">Register</button><br>
+    <p class="copu">insert front view of your NRC</p>
+    <input type="file" accept="image/*" capture="user">
+    <br>
+    <p class="copu">insert back view of your NRC</p>
+    <input type="file" accept="image/*" capture="user">
+  </form>
+
+  <div class="student-list" id="studentList">
+    <h2>Registered Students:</h2>
+    <div id="students"></div>
+  </div>
+
+  <!-- Firebase Scripts -->
+
+
+  <!-- Your Firebase Config -->
+  <script>
+
+  </script>
+
+</body>
+</html>
